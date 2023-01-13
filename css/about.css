@@ -6,6 +6,10 @@
   color: var(--color-text-bl, #383A4C);
 }
 
+.about__item-arrow {
+  display: none;
+}
+
 .about__content {
   margin-bottom: 50px;
   text-align: center;
@@ -123,7 +127,7 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 30px 0;
+    padding: 30px 0 60px;
   }
 
   .about__content-title {
@@ -148,5 +152,37 @@
     line-height: 17px;
   }
 
+  .about__list {
+    position: relative;
+  }
+
+  .about__item {
+    display: none;
+  }
+
+  .about__item--active {
+    display: block;
+  }
+
+  .about__item-arrow {
+    display: block;
+    position: absolute;
+    top: 33%;
+  }
+
+  .arrow-left {
+    left: -15px;
+  }
+
+  .arrow-right {
+    right: -15px;
+  }
   
+  .arrow--active svg>g>ellipse {
+    fill: #4B4D62;
+  }
+
+  .arrow--active svg>path {
+    fill: #fff;
+  }
 }
