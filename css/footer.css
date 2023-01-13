@@ -13,7 +13,9 @@
   justify-content: space-between;
 }
 
-.footer__phone-icon {
+.footer__phone-icon,
+.footer__logo-mini,
+.footer__bottom {
   display: none;
 }
 
@@ -32,4 +34,41 @@
   font-size: 16px;
   line-height: 19px;
   border-bottom: 1px solid var(--color-text-wh, rgba(255, 255, 255, 0.75) );
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 25px 0 0;
+  }
+
+  div.footer__container {
+    padding-bottom: 25px;
+  }
+
+  .footer__phone-icon,
+  .footer__logo-mini {
+    display: block;
+  }
+
+  .footer__logo-icon,
+  .footer__phone-inner,
+  .footer__text {
+    display: none;
+  }
+
+  .footer__logo-wrapper {
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .footer__bottom {
+    padding: 15px 0;
+    display: block;
+    background-color: #2A2C3F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    opacity: 0.5;
+  }
+  
 }
